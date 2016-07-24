@@ -2,11 +2,11 @@
 
 Vorlesungsinhalte
 ======================================================
-Theorie:  DSL Engineering, 
-          readingMaterial/book/markusvoelter-dslengineering-1.0.pdf
+Theorie:  DSL Engineering: readingMaterial/book/markusvoelter-dslengineering-1.0.pdf
+
 Praxis:   Sprachbau mit MPS
-Research: Ein paar Papers lesen und darüber referieren
-          readingMaterial/papers
+
+Research: Ein paar Papers lesen und darüber referieren: readingMaterial/papers
 
 Prüfungsrelevant sind Teil 1 und 2 des Buches, sowie die Aspekte von MPS
 die wir im Rahmen der Praxisphasen erlernen.
