@@ -44,7 +44,7 @@ Wir tauschen den Code untereinander aus mittels git. Das bedeutet:
 * ich mache die Übungsaufgaben auf dem master Branch; ich werde versuchen,
   daran zu denken, vor jeder neuen Aufgabe einen Tag zu setzen.
 * Jeder von Euch erstellt sich einen separaten Branch auf dem er arbeitet
-  Namenskonvention: teilnehmer/<name>
+  Namenskonvention: teilnehmer/Nachname
 * Wenn ihr mit einer Aufgabe fertig seid, committed ihr den Code und
   pusht ihn nach github, auf Euren Branch. 
 * Falls ihr Euch völlig verheddert habt, könnt ihr Eure(n) letzten commits
