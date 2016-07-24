@@ -82,6 +82,12 @@ Im Folgenden die grobe Struktur der Aufgaben:
 * Modellierung von Datenstrukturen und deren Beziehungen untereinander
 * Einfache Sprachstruktur, Grundlagen des Editors, einfache Checks
 
+### 2) Constraints auf Entities
+* Werte-Constraints auf den Entities, sowie zwischen den einzelnen Attributen
+* Einbettung der existierenden Expression-Sprache
+* Erweiterung der Expressions durch Neubau einzelner Expressions
+  um auf die Attribute zuzugreifen
+
 
   
 
