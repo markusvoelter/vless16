@@ -1,7 +1,9 @@
-# vless16
+Vorlesung Language Engineering, Sommersemester 2016 (VLESS16)
+======================================================
+
 
 Vorlesungsinhalte
-======================================================
+---------------------------
 - Theorie:  DSL Engineering: readingMaterial/book/markusvoelter-dslengineering-1.0.pdf
 - Praxis:   Sprachbau mit MPS
 - Research: Ein paar Papers lesen und darüber referieren: readingMaterial/papers
@@ -16,13 +18,13 @@ mit MPS. Den genauen zeitlichen Ablauf und die Schwerpunkte legen wir
 während der Vorlesung gemeinsam fest.
 
 Voraussetzungen
-=====================================================
+---------------------------
 * Programmieren mit Java
 * Objektorientieres Denken (und programmieren)
 * Grundlagen von git
 
 Installation der Tools
-=====================================================
+---------------------------
 
 * Installieren von Java 1.8.x 
 * Installieren von git
@@ -39,14 +41,15 @@ Installation der Tools
       muss nach "plugins"!
       
 Repositories, Code, Projekte
-=====================================================
+---------------------------
 Wir tauschen den Code untereinander aus mittels git. Das bedeutet:
 * ich mache die Übungsaufgaben auf dem master Branch; ich werde versuchen,
   daran zu denken, vor jeder neuen Aufgabe einen Tag zu setzen.
 * Jeder von Euch erstellt sich einen separaten Branch auf dem er arbeitet
   Namenskonvention: teilnehmer/Nachname
-* Wenn ihr mit einer Aufgabe fertig seid, committed ihr den Code und
-  pusht ihn nach github, auf Euren Branch. 
+* Wenn ihr mit einer Aufgabe fertig seid (oder es Probleme gibt), 
+  committed ihr den Code und pusht ihn nach github, auf Euren Branch. 
+  Dadurch komm ich an den Code ran und kann beim Debuggen helfen.
 * Falls ihr Euch völlig verheddert habt, könnt ihr Eure(n) letzten commits
   wegwerfen und von master mergen um wieder auf einen sauberen und 
   funktionierenden Stand zu kommen.
