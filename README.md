@@ -15,3 +15,5 @@ lesen und dann darüber reden/diskutieren) sowie Übungen zum Sprachbau
 mit MPS. Den genauen zeitlichen Ablauf und die Schwerpunkte legen wir
 während der Vorlesung gemeinsam fest.
 
+Installation der Tools
+=====================================================
