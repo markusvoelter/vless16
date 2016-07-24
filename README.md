@@ -40,6 +40,8 @@ Installation der Tools
       MPS kopieren. ACHTUNG: es gibt auch ein "plugin" Verzeichnis, das Zeug
       muss nach "plugins"!
       
+      
+
 Repositories, Code, Projekte
 ---------------------------
 Wir tauschen den Code untereinander aus mittels git. Das bedeutet:
@@ -56,9 +58,27 @@ Wir tauschen den Code untereinander aus mittels git. Das bedeutet:
 
 
 
+Übungsaufgaben
+----------------------------------
 
+Wir werden die Übungsaufgaben dynamisch anpassen :-) Ein paar Dinge
+stehen allerdings schon fest, denn wir wollen zwei Ziele erreichen:
 
+* Die Grundlagen des Sprachbau behandeln, also Struktur, Editoren, Typsysteme
+  sowie Interpreter und/oder Generatoren
+* Einige der Advanced-Features von MPS kennenlernen
 
+Das kann unter anderem auch bedeuten, dass wir einige Aufgaben nicht
+gemeinsam machen, sondern ich sie als Demo zeige (gilt insbesondere für
+die Advanced Topics). 
+
+Wir arbeiten alle an einer gemeinsamen Aufgabe, die wir, jeder einzeln, 
+Schritt für Schritt komplettieren (im SS 2015 hatte ich mit Projektaufgaben,
+jede Gruppe einen andere, experimentiert. War nix!). 
+
+Im Folgenden die grobe Struktur der Aufgaben:
+
+### 
 
 
 
