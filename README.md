@@ -75,10 +75,13 @@ Aufgabe, die wir, jeder einzeln, Schritt für Schritt komplettieren (im
 SS 2015 hatte ich mit Projektaufgaben, jede Gruppe einen andere,
 experimentiert. War nix!). 
 
+Die Sprachen die wir hier bauen sind nicht sehr nützlich, und nicht
+unbedingt gute Beispiele für DSLs. Aber sie sind einfach und
+illustrieren Sprachbau mit MPS.
+
 Im Folgenden die grobe Struktur der Aufgaben:
 
 ### 1) Entities
-
 * Modellierung von Datenstrukturen und deren Beziehungen untereinander
 * Einfache Sprachstruktur, Grundlagen des Editors, einfache Checks
 
@@ -87,7 +90,19 @@ Im Folgenden die grobe Struktur der Aufgaben:
 * Einbettung der existierenden Expression-Sprache
 * Erweiterung der Expressions durch Neubau einzelner Expressions
   um auf die Attribute zuzugreifen
+  
+### 3) Codegenerator nach Java  
+* Abbildung der Entities auf JavaBeans, Ausführung
+* Illustriert den Generatorbau
 
+### 4) Instanziierungs-/Testsprache
+* Definition von Instanzen der Entities
+* Separater Viewpoint, Sprachintegration
+* Generierung nach Java, Ausführen des ganzen.
+
+### 5) Grafische Syntax für Entitäten (Optional)
+
+### 6) Integration von Mathematischen Expressions (Optional)
 
   
 
