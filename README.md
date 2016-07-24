@@ -70,15 +70,20 @@ stehen allerdings schon fest, denn wir wollen zwei Ziele erreichen:
 
 Das kann unter anderem auch bedeuten, dass wir einige Aufgaben nicht
 gemeinsam machen, sondern ich sie als Demo zeige (gilt insbesondere für
-die Advanced Topics). 
-
-Wir arbeiten alle an einer gemeinsamen Aufgabe, die wir, jeder einzeln, 
-Schritt für Schritt komplettieren (im SS 2015 hatte ich mit Projektaufgaben,
-jede Gruppe einen andere, experimentiert. War nix!). 
+die Advanced Topics). Generell arbeiten alle an einer gemeinsamen
+Aufgabe, die wir, jeder einzeln, Schritt für Schritt komplettieren (im
+SS 2015 hatte ich mit Projektaufgaben, jede Gruppe einen andere,
+experimentiert. War nix!). 
 
 Im Folgenden die grobe Struktur der Aufgaben:
 
-### 
+### 1) Entities
+
+* Modellierung von Datenstrukturen und deren Beziehungen untereinander
+* Einfache Sprachstruktur, Grundlagen des Editors, einfache Checks
+
+
+  
 
 
 
