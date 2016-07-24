@@ -17,3 +17,16 @@ während der Vorlesung gemeinsam fest.
 
 Installation der Tools
 =====================================================
+
+* Installieren von Java 1.8.x 
+* Herunterladen von Jetbrains MPS, Version 3.3.5 von https://www.jetbrains.com/mps/
+  Achtung, möglicherweise gibt es eine neuere Version. Wir verwenden aber 3.3.5.
+* Installieren der mbeddr Plattform von https://github.com/mbeddr/mbeddr.core/releases
+  einfach den aktuellsten Nightly verwenden. Die relevante Datei ist 
+  platform-distribution.zip
+    - Nach dem Download des ZIPs dieses Entpacken
+    - Darin befinden sich eine ganze Reihe Verzeichnisse, jedes repräsentiert
+      ein MPS Plugin. 
+    - Die Verzeichnisse (=Plugins) in das "plugins" Verzeichnis des installierten  
+      MPS kopieren. ACHTUNG: es gibt auch ein "plugin" Verzeichnis, das Zeug
+      muss nach "plugins"!
