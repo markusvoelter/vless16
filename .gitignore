@@ -41,3 +41,5 @@ test_gen
 test_gen.caches
 *.iws
 build.properties
+.gitattributes
+code/.mps/vcs.xml
