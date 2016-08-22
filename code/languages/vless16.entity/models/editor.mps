@@ -30,7 +30,12 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -52,6 +57,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -92,6 +98,9 @@
       <node concept="2iRkQZ" id="2XvX04fa87R" role="2iSdaV" />
       <node concept="3EZMnI" id="2XvX04fa87m" role="3EZMnx">
         <node concept="2iRfu4" id="2XvX04fa87n" role="2iSdaV" />
+        <node concept="1kHk_G" id="2XvX04faDdz" role="3EZMnx">
+          <ref role="1NtTu8" to="7mgl:2XvX04faDda" resolve="public" />
+        </node>
         <node concept="3F0ifn" id="2XvX04fa87j" role="3EZMnx">
           <property role="3F0ifm" value="entity" />
         </node>
@@ -138,6 +147,18 @@
         <node concept="2iRkQZ" id="2XvX04fa8Co" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="2XvX04fa8BL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2XvX04far$z">
+    <ref role="1XX52x" to="7mgl:2XvX04far$8" resolve="EntityType" />
+    <node concept="1iCGBv" id="2XvX04far$_" role="2wV5jI">
+      <ref role="1NtTu8" to="7mgl:2XvX04far$9" />
+      <node concept="1sVBvm" id="2XvX04far$B" role="1sWHZn">
+        <node concept="3F0A7n" id="2XvX04far$I" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
