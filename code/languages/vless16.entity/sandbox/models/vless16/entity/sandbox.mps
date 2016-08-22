@@ -51,7 +51,7 @@
       <node concept="3sM3a9" id="27BqVNXcs_v" role="3sM3bU">
         <property role="TrG5h" value="hauptsitz" />
         <node concept="3sPTd5" id="27BqVNXdzew" role="3sM3bS">
-          <ref role="3sPTd6" node="27BqVNXcDGn" resolve="Auto" />
+          <ref role="3sPTd6" node="27BqVNXcDGn" resolve="PublicTest" />
         </node>
       </node>
       <node concept="3sM3a9" id="27BqVNXcs_J" role="3sM3bU">
@@ -72,8 +72,19 @@
   <node concept="3sM3ab" id="27BqVNXcDGm">
     <property role="TrG5h" value="DatenUnStrukturen" />
     <node concept="3sM3a8" id="27BqVNXcDGn" role="3sM3bO">
-      <property role="TrG5h" value="Auto" />
+      <property role="TrG5h" value="PublicTest" />
       <property role="3sP7Rx" value="true" />
+      <node concept="3sM3a9" id="2UeLrjA7VfH" role="3sM3bU">
+        <property role="TrG5h" value="x" />
+        <node concept="3sM3bY" id="2UeLrjA7VfL" role="3sM3bS" />
+      </node>
+    </node>
+    <node concept="3sM3a8" id="2UeLrjA7VfW" role="3sM3bO">
+      <property role="TrG5h" value="PrivateTest" />
+      <node concept="3sM3a9" id="2UeLrjA7Vg1" role="3sM3bU">
+        <property role="TrG5h" value="y" />
+        <node concept="3sM3bY" id="2UeLrjA7Vg5" role="3sM3bS" />
+      </node>
     </node>
   </node>
 </model>
