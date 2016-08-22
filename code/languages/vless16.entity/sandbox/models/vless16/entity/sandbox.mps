@@ -9,6 +9,7 @@
   <registry>
     <language id="4de8d4e8-7cd4-4219-8990-7f0ce80b3397" name="vless16.entity">
       <concept id="2443039782317545780" name="vless16.entity.structure.Entity" flags="ng" index="3sM3a8">
+        <property id="2443039782317790813" name="public" index="3sP7Rx" />
         <child id="2443039782317545798" name="attributes" index="3sM3bU" />
       </concept>
       <concept id="2443039782317545781" name="vless16.entity.structure.Attribute" flags="ng" index="3sM3a9">
@@ -19,6 +20,9 @@
       </concept>
       <concept id="2443039782317545794" name="vless16.entity.structure.IntType" flags="ng" index="3sM3bY" />
       <concept id="2443039782317545795" name="vless16.entity.structure.StringType" flags="ng" index="3sM3bZ" />
+      <concept id="2443039782317652217" name="vless16.entity.structure.EntityType" flags="ng" index="3sPTd5">
+        <reference id="2443039782317652218" name="entity" index="3sPTd6" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -30,6 +34,7 @@
     <property role="TrG5h" value="Datenstrukturen" />
     <node concept="3sM3a8" id="27BqVNXbPLI" role="3sM3bO">
       <property role="TrG5h" value="Person" />
+      <property role="3sP7Rx" value="true" />
       <node concept="3sM3a9" id="27BqVNXbPLK" role="3sM3bU">
         <property role="TrG5h" value="name" />
         <node concept="3sM3bZ" id="27BqVNXbPLO" role="3sM3bS" />
@@ -42,6 +47,18 @@
         <property role="TrG5h" value="hello" />
         <node concept="3sM3bY" id="27BqVNXbRKN" role="3sM3bS" />
       </node>
+      <node concept="3sM3a9" id="27BqVNXcs_v" role="3sM3bU">
+        <property role="TrG5h" value="hauptsitz" />
+        <node concept="3sPTd5" id="27BqVNXdzew" role="3sM3bS">
+          <ref role="3sPTd6" node="27BqVNXcDGn" resolve="Auto" />
+        </node>
+      </node>
+      <node concept="3sM3a9" id="27BqVNXcs_J" role="3sM3bU">
+        <property role="TrG5h" value="bruder" />
+        <node concept="3sPTd5" id="27BqVNXc$BP" role="3sM3bS">
+          <ref role="3sPTd6" node="27BqVNXbPLI" resolve="Person" />
+        </node>
+      </node>
     </node>
     <node concept="3sM3a8" id="27BqVNXbT8p" role="3sM3bO">
       <property role="TrG5h" value="Addresse" />
@@ -49,6 +66,13 @@
         <property role="TrG5h" value="name" />
         <node concept="3sM3bZ" id="27BqVNXbYMS" role="3sM3bS" />
       </node>
+    </node>
+  </node>
+  <node concept="3sM3ab" id="27BqVNXcDGm">
+    <property role="TrG5h" value="DatenUnStrukturen" />
+    <node concept="3sM3a8" id="27BqVNXcDGn" role="3sM3bO">
+      <property role="TrG5h" value="Auto" />
+      <property role="3sP7Rx" value="true" />
     </node>
   </node>
 </model>
