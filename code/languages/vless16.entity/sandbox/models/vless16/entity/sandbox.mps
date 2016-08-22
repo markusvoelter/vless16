@@ -19,10 +19,14 @@
         <child id="6356937695432374381" name="entities" index="jGh_a" />
       </concept>
       <concept id="6356937695432374357" name="vless16.entity.structure.Entity" flags="ng" index="jGh_M">
+        <property id="6356937695432453823" name="public" index="jGGYo" />
         <child id="6356937695432374379" name="attributes" index="jGh_c" />
       </concept>
       <concept id="6356937695432374356" name="vless16.entity.structure.Attribute" flags="ng" index="jGh_N">
         <child id="6356937695432374377" name="type" index="jGh_e" />
+      </concept>
+      <concept id="6356937695432420275" name="vless16.entity.structure.EntityType" flags="ng" index="jG$Ek">
+        <reference id="6356937695432420276" name="entity" index="jG$Ej" />
       </concept>
     </language>
   </registry>
@@ -30,6 +34,7 @@
     <property role="TrG5h" value="CRM" />
     <node concept="jGh_M" id="5wSoitbynIj" role="jGh_a">
       <property role="TrG5h" value="Person" />
+      <property role="jGGYo" value="true" />
       <node concept="jGh_N" id="5wSoitbynIl" role="jGh_c">
         <property role="TrG5h" value="name" />
         <node concept="jGh_3" id="5wSoitbynIp" role="jGh_e" />
@@ -46,8 +51,48 @@
         <property role="TrG5h" value="yes" />
         <node concept="jGh_4" id="5wSoitbyohw" role="jGh_e" />
       </node>
+      <node concept="jGh_N" id="5wSoitbyB4p" role="jGh_c">
+        <property role="TrG5h" value="address" />
+        <node concept="jG$Ek" id="5wSoitbyB4B" role="jGh_e">
+          <ref role="jG$Ej" node="5wSoitbynIj" resolve="Person" />
+        </node>
+      </node>
+      <node concept="jGh_N" id="5wSoitbyVKZ" role="jGh_c">
+        <property role="TrG5h" value="test2" />
+        <node concept="jG$Ek" id="5wSoitbyVLd" role="jGh_e">
+          <ref role="jG$Ej" node="5wSoitbyO9L" resolve="Page" />
+        </node>
+      </node>
     </node>
-    <node concept="jGh_M" id="5wSoitbyp7c" role="jGh_a" />
+    <node concept="jGh_M" id="5wSoitbyp7c" role="jGh_a">
+      <property role="TrG5h" value="Address" />
+    </node>
+  </node>
+  <node concept="jGh_K" id="5wSoitbyO9K">
+    <property role="TrG5h" value="CMS" />
+    <node concept="jGh_M" id="5wSoitbyO9L" role="jGh_a">
+      <property role="jGGYo" value="true" />
+      <property role="TrG5h" value="Page" />
+      <node concept="jGh_N" id="5wSoitbyO9N" role="jGh_c">
+        <property role="TrG5h" value="id" />
+        <node concept="jGh_4" id="5wSoitbyO9R" role="jGh_e" />
+      </node>
+      <node concept="jGh_N" id="5wSoitbyOa4" role="jGh_c">
+        <property role="TrG5h" value="version" />
+        <node concept="jGh_4" id="5wSoitbyOaa" role="jGh_e" />
+      </node>
+      <node concept="jGh_N" id="5wSoitbyOaf" role="jGh_c">
+        <property role="TrG5h" value="name" />
+        <node concept="jGh_3" id="5wSoitbyOan" role="jGh_e" />
+      </node>
+    </node>
+    <node concept="jGh_M" id="5wSoitbyO9U" role="jGh_a">
+      <property role="TrG5h" value="Version" />
+      <node concept="jGh_N" id="5wSoitbyOa0" role="jGh_c">
+        <property role="TrG5h" value="version" />
+        <node concept="jGh_4" id="5wSoitbyO9Z" role="jGh_e" />
+      </node>
+    </node>
   </node>
 </model>
 
