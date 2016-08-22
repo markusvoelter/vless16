@@ -4,6 +4,7 @@
   <languages>
     <use id="6241b6d7-0a1c-4a8e-aa6a-9c470b2f9d5d" name="vless16.entity" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
   </languages>
   <imports />
   <registry>

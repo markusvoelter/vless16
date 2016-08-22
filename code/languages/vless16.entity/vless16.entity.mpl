@@ -48,6 +48,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">6241b6d7-0a1c-4a8e-aa6a-9c470b2f9d5d(vless16.entity)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>

@@ -101,6 +101,10 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176903168877" name="jetbrains.mps.baseLanguage.collections.structure.UnionOperation" flags="nn" index="4Tj9Z" />
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -203,14 +207,16 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="2XvX04faOOc" role="3cqZAp">
-            <node concept="37vLTw" id="2XvX04faYVF" role="3clFbG">
-              <ref role="3cqZAo" node="2XvX04faYVg" resolve="remote" />
-            </node>
-          </node>
           <node concept="3clFbF" id="2XvX04faxO1" role="3cqZAp">
-            <node concept="37vLTw" id="2XvX04faO15" role="3clFbG">
-              <ref role="3cqZAo" node="2XvX04faO0X" resolve="local" />
+            <node concept="2OqwBi" id="2XvX04fbwik" role="3clFbG">
+              <node concept="37vLTw" id="2XvX04faO15" role="2Oq$k0">
+                <ref role="3cqZAo" node="2XvX04faO0X" resolve="local" />
+              </node>
+              <node concept="4Tj9Z" id="2XvX04fby6Q" role="2OqNvi">
+                <node concept="37vLTw" id="2XvX04fby9W" role="576Qk">
+                  <ref role="3cqZAo" node="2XvX04faYVg" resolve="remote" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
