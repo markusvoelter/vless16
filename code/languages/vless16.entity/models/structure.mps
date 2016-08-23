@@ -19,6 +19,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -46,9 +47,13 @@
   <node concept="1TIwiD" id="27BqVNXbP$O">
     <property role="1pbfSe" value="521585904" />
     <property role="TrG5h" value="Entity" />
+    <property role="34LRSv" value="entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="27BqVNXbP$W" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="27BqVNXeXYt" role="PzmwI">
+      <ref role="PrY4T" node="27BqVNXeXYp" resolve="IPackageContent" />
     </node>
     <node concept="1TJgyj" id="27BqVNXbP_6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -90,11 +95,11 @@
     <node concept="PrWs8" id="27BqVNXbP$U" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="27BqVNXbP_8" role="1TKVEi">
+    <node concept="1TJgyj" id="27BqVNXeXYx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="entities" />
+      <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="27BqVNXbP$O" resolve="Entity" />
+      <ref role="20lvS9" node="27BqVNXeXYp" resolve="IPackageContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="27BqVNXbP_2">
@@ -118,6 +123,21 @@
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="27BqVNXbP$O" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="27BqVNXeXYp">
+    <property role="1pbfSe" value="522406741" />
+    <property role="TrG5h" value="IPackageContent" />
+  </node>
+  <node concept="1TIwiD" id="27BqVNXffKt">
+    <property role="1pbfSe" value="522479577" />
+    <property role="TrG5h" value="EmptyPackageContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="27BqVNXffKu" role="PzmwI">
+      <ref role="PrY4T" node="27BqVNXeXYp" resolve="IPackageContent" />
+    </node>
+    <node concept="PrWs8" id="27BqVNXffKz" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
     </node>
   </node>
 </model>

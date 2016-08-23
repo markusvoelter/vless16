@@ -17,13 +17,14 @@
         <child id="2443039782317545796" name="type" index="3sM3bS" />
       </concept>
       <concept id="2443039782317545783" name="vless16.entity.structure.Package" flags="ng" index="3sM3ab">
-        <child id="2443039782317545800" name="entities" index="3sM3bO" />
+        <child id="2443039782318366625" name="contents" index="3sRbgt" />
       </concept>
       <concept id="2443039782317545794" name="vless16.entity.structure.IntType" flags="ng" index="3sM3bY" />
       <concept id="2443039782317545795" name="vless16.entity.structure.StringType" flags="ng" index="3sM3bZ" />
       <concept id="2443039782317652217" name="vless16.entity.structure.EntityType" flags="ng" index="3sPTd5">
         <reference id="2443039782317652218" name="entity" index="3sPTd6" />
       </concept>
+      <concept id="2443039782318439453" name="vless16.entity.structure.EmptyPackageContent" flags="ng" index="3sQTux" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -33,7 +34,7 @@
   </registry>
   <node concept="3sM3ab" id="27BqVNXbPLH">
     <property role="TrG5h" value="Datenstrukturen" />
-    <node concept="3sM3a8" id="27BqVNXbPLI" role="3sM3bO">
+    <node concept="3sM3a8" id="27BqVNXbPLI" role="3sRbgt">
       <property role="TrG5h" value="Person" />
       <property role="3sP7Rx" value="true" />
       <node concept="3sM3a9" id="27BqVNXbPLK" role="3sM3bU">
@@ -61,7 +62,7 @@
         </node>
       </node>
     </node>
-    <node concept="3sM3a8" id="27BqVNXbT8p" role="3sM3bO">
+    <node concept="3sM3a8" id="27BqVNXbT8p" role="3sRbgt">
       <property role="TrG5h" value="Addresse" />
       <node concept="3sM3a9" id="27BqVNXbYMT" role="3sM3bU">
         <property role="TrG5h" value="name" />
@@ -71,10 +72,11 @@
   </node>
   <node concept="3sM3ab" id="27BqVNXcDGm">
     <property role="TrG5h" value="DatenUnStrukturen" />
-    <node concept="3sM3a8" id="27BqVNXcDGn" role="3sM3bO">
+    <node concept="3sM3a8" id="27BqVNXcDGn" role="3sRbgt">
       <property role="TrG5h" value="Auto" />
       <property role="3sP7Rx" value="true" />
     </node>
+    <node concept="3sQTux" id="27BqVNXfxKD" role="3sRbgt" />
   </node>
 </model>
 
