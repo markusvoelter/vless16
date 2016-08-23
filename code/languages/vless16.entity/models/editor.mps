@@ -97,18 +97,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="27BqVNXbPMw">
-    <ref role="1XX52x" to="e4kc:27BqVNXbP_2" resolve="IntType" />
-    <node concept="3F0ifn" id="27BqVNXbPMy" role="2wV5jI">
-      <property role="3F0ifm" value="int" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="27BqVNXbPMX">
-    <ref role="1XX52x" to="e4kc:27BqVNXbP_3" resolve="StringType" />
-    <node concept="3F0ifn" id="27BqVNXbPSD" role="2wV5jI">
-      <property role="3F0ifm" value="string" />
-    </node>
-  </node>
   <node concept="24kQdi" id="27BqVNXbQHg">
     <ref role="1XX52x" to="e4kc:27BqVNXbP$P" resolve="Attribute" />
     <node concept="3EZMnI" id="27BqVNXbQHi" role="2wV5jI">

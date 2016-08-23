@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="e4kc" ref="r:deeda1c6-7a2e-433a-949b-655f9de79f3f(vless16.entity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -60,6 +61,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -161,7 +163,7 @@
   <node concept="bUwia" id="27BqVNXbP$N">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="27BqVNXeK1z" role="3acgRq">
-      <ref role="30HIoZ" to="e4kc:27BqVNXbP_2" resolve="IntType" />
+      <ref role="30HIoZ" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
       <node concept="gft3U" id="27BqVNXeK1B" role="1lVwrX">
         <node concept="10Oyi0" id="27BqVNXeK1H" role="gfFT$" />
       </node>
@@ -196,7 +198,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="27BqVNXeK1K" role="3acgRq">
-      <ref role="30HIoZ" to="e4kc:27BqVNXbP_3" resolve="StringType" />
+      <ref role="30HIoZ" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
       <node concept="gft3U" id="27BqVNXeK1V" role="1lVwrX">
         <node concept="17QB3L" id="27BqVNXeK21" role="gfFT$" />
       </node>
@@ -312,6 +314,7 @@
                 <node concept="30H73N" id="27BqVNXkh5U" role="2Oq$k0" />
               </node>
             </node>
+            <node concept="3clFbH" id="27BqVNXkoqb" role="3cqZAp" />
           </node>
         </node>
       </node>
