@@ -11,6 +11,7 @@
   <imports>
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="e4kc" ref="r:deeda1c6-7a2e-433a-949b-655f9de79f3f(vless16.entity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -166,6 +167,27 @@
       <ref role="30HIoZ" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
       <node concept="gft3U" id="27BqVNXeK1B" role="1lVwrX">
         <node concept="10Oyi0" id="27BqVNXeK1H" role="gfFT$" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="2sJNOXPhX_x" role="3acgRq">
+      <ref role="30HIoZ" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+      <node concept="gft3U" id="2sJNOXPhX_R" role="1lVwrX">
+        <node concept="10Oyi0" id="2sJNOXPhX_X" role="gfFT$">
+          <node concept="29HgVG" id="2sJNOXPhXA1" role="lGtFl">
+            <node concept="3NFfHV" id="2sJNOXPhXA2" role="3NFExx">
+              <node concept="3clFbS" id="2sJNOXPhXA3" role="2VODD2">
+                <node concept="3clFbF" id="2sJNOXPhXA9" role="3cqZAp">
+                  <node concept="2OqwBi" id="2sJNOXPhXA4" role="3clFbG">
+                    <node concept="3TrEf2" id="2sJNOXPhXA7" role="2OqNvi">
+                      <ref role="3Tt5mk" to="hm2y:2rOWEwsEjch" />
+                    </node>
+                    <node concept="30H73N" id="2sJNOXPhXA8" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="27BqVNXeVNd" role="3acgRq">

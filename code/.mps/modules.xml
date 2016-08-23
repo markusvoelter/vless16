@@ -15,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/languages/vless16.entity/vless16.entity.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/demo/demo.msd" folder="expr.test" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr.plugin" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.ts.entity/test.ts.entity.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.int.core.expr/test.in.core.expr.msd" folder="expr.test" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr.test" />
     </projectModules>
