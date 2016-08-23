@@ -8,7 +8,6 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -123,27 +122,16 @@
     <property role="1pbfSe" value="1971858261" />
     <property role="TrG5h" value="NewExpressionArgument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="76IaIO3R9Mo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="76IaIO3Qw1N" resolve="AttributeReference" />
-    </node>
     <node concept="1TJgyj" id="76IaIO3Qw1I" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="76IaIO3Qw1N">
-    <property role="1pbfSe" value="1971858272" />
-    <property role="TrG5h" value="AttributeReference" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="76IaIO3Qw1O" role="1TKVEi">
+    <node concept="1TJgyj" id="76IaIO3Sp_v" role="1TKVEi">
       <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="name" />
       <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="attribute" />
       <ref role="20lvS9" node="5wSoitbynxk" resolve="Attribute" />
     </node>
   </node>
