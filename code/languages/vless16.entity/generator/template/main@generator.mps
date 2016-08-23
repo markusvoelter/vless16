@@ -10,6 +10,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="7d25" ref="r:e8c750b1-d55b-4dbf-8477-b18357eba550(vless16.entity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -173,13 +174,13 @@
   <node concept="bUwia" id="5wSoitbynvM">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="5wSoitbyZIF" role="3acgRq">
-      <ref role="30HIoZ" to="7d25:5wSoitbynxz" resolve="IntType" />
+      <ref role="30HIoZ" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
       <node concept="gft3U" id="5wSoitbyZIJ" role="1lVwrX">
         <node concept="10Oyi0" id="5wSoitbyZIP" role="gfFT$" />
       </node>
     </node>
     <node concept="3aamgX" id="5wSoitbyZJX" role="3acgRq">
-      <ref role="30HIoZ" to="7d25:5wSoitbynx$" resolve="StringType" />
+      <ref role="30HIoZ" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
       <node concept="gft3U" id="5wSoitbyZKb" role="1lVwrX">
         <node concept="17QB3L" id="5wSoitbyZKh" role="gfFT$" />
       </node>
@@ -495,7 +496,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="76IaIO3PvZC" role="jymVt" />
     <node concept="3Tm1VV" id="5wSoitbyXlK" role="1B3o_S" />
     <node concept="n94m4" id="5wSoitbyXlL" role="lGtFl">
       <ref role="n9lRv" to="7d25:5wSoitbynxl" resolve="Entity" />

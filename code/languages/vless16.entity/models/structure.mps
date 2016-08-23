@@ -7,12 +7,12 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -53,12 +53,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5wSoitbynxm" resolve="Type" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
   <node concept="1TIwiD" id="5wSoitbynxl">
     <property role="1pbfSe" value="1547576964" />
     <property role="TrG5h" value="Entity" />
+    <property role="34LRSv" value="entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5wSoitbynxs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -73,13 +74,6 @@
       <property role="TrG5h" value="public" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5wSoitbynxm">
-    <property role="1pbfSe" value="1547576963" />
-    <property role="TrG5h" value="Type" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5wSoitbynxn">
     <property role="1pbfSe" value="1547576962" />
@@ -96,27 +90,61 @@
       <ref role="20lvS9" node="5wSoitbynxl" resolve="Entity" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5wSoitbynxz">
-    <property role="1pbfSe" value="1547576950" />
-    <property role="TrG5h" value="IntType" />
-    <property role="34LRSv" value="int" />
-    <ref role="1TJDcQ" node="5wSoitbynxm" resolve="Type" />
-  </node>
-  <node concept="1TIwiD" id="5wSoitbynx$">
-    <property role="1pbfSe" value="1547576949" />
-    <property role="TrG5h" value="StringType" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="5wSoitbynxm" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="5wSoitbyyIN">
     <property role="1pbfSe" value="1547531046" />
     <property role="TrG5h" value="EntityType" />
-    <ref role="1TJDcQ" node="5wSoitbynxm" resolve="Type" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="5wSoitbyyIO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5wSoitbynxl" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="76IaIO3QvZP">
+    <property role="1pbfSe" value="1971858146" />
+    <property role="TrG5h" value="NewExpression" />
+    <property role="34LRSv" value="new" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="76IaIO3Qw1D" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="76IaIO3Qw1C" resolve="NewExpressionArgument" />
+    </node>
+    <node concept="1TJgyj" id="76IaIO3QYAf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5wSoitbyyIN" resolve="EntityType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="76IaIO3Qw1C">
+    <property role="1pbfSe" value="1971858261" />
+    <property role="TrG5h" value="NewExpressionArgument" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="76IaIO3R9Mo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="76IaIO3Qw1N" resolve="AttributeReference" />
+    </node>
+    <node concept="1TJgyj" id="76IaIO3Qw1I" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="76IaIO3Qw1N">
+    <property role="1pbfSe" value="1971858272" />
+    <property role="TrG5h" value="AttributeReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="76IaIO3Qw1O" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="attribute" />
+      <ref role="20lvS9" node="5wSoitbynxk" resolve="Attribute" />
     </node>
   </node>
 </model>
