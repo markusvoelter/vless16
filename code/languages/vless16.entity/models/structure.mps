@@ -8,13 +8,11 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -72,15 +70,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="27BqVNXbP$Q" resolve="Type" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="27BqVNXbP$Q">
-    <property role="1pbfSe" value="521585906" />
-    <property role="TrG5h" value="Type" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="27BqVNXbP$R">
     <property role="1pbfSe" value="521585907" />
@@ -97,22 +88,10 @@
       <ref role="20lvS9" node="27BqVNXbP$O" resolve="Entity" />
     </node>
   </node>
-  <node concept="1TIwiD" id="27BqVNXbP_2">
-    <property role="1pbfSe" value="521585918" />
-    <property role="TrG5h" value="IntType" />
-    <property role="34LRSv" value="int" />
-    <ref role="1TJDcQ" node="27BqVNXbP$Q" resolve="Type" />
-  </node>
-  <node concept="1TIwiD" id="27BqVNXbP_3">
-    <property role="1pbfSe" value="521585919" />
-    <property role="TrG5h" value="StringType" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="27BqVNXbP$Q" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="27BqVNXcfzT">
     <property role="1pbfSe" value="521692341" />
     <property role="TrG5h" value="EntityType" />
-    <ref role="1TJDcQ" node="27BqVNXbP$Q" resolve="Type" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="27BqVNXcfzU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="entity" />

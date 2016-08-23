@@ -5,9 +5,15 @@
     <use id="4de8d4e8-7cd4-4219-8990-7f0ce80b3397" name="vless16.entity" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
+      <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
+    </language>
     <language id="4de8d4e8-7cd4-4219-8990-7f0ce80b3397" name="vless16.entity">
       <concept id="2443039782317545780" name="vless16.entity.structure.Entity" flags="ng" index="3sM3a8">
         <property id="2443039782317790813" name="public" index="3sP7Rx" />
@@ -19,8 +25,6 @@
       <concept id="2443039782317545783" name="vless16.entity.structure.Package" flags="ng" index="3sM3ab">
         <child id="2443039782317545800" name="entities" index="3sM3bO" />
       </concept>
-      <concept id="2443039782317545794" name="vless16.entity.structure.IntType" flags="ng" index="3sM3bY" />
-      <concept id="2443039782317545795" name="vless16.entity.structure.StringType" flags="ng" index="3sM3bZ" />
       <concept id="2443039782317652217" name="vless16.entity.structure.EntityType" flags="ng" index="3sPTd5">
         <reference id="2443039782317652218" name="entity" index="3sPTd6" />
       </concept>
@@ -38,15 +42,15 @@
       <property role="3sP7Rx" value="true" />
       <node concept="3sM3a9" id="27BqVNXbPLK" role="3sM3bU">
         <property role="TrG5h" value="name" />
-        <node concept="3sM3bZ" id="27BqVNXbPLO" role="3sM3bS" />
+        <node concept="30bdrU" id="27BqVNXkDJl" role="3sM3bS" />
       </node>
       <node concept="3sM3a9" id="27BqVNXbPLZ" role="3sM3bU">
         <property role="TrG5h" value="alter" />
-        <node concept="3sM3bY" id="27BqVNXbQ5e" role="3sM3bS" />
+        <node concept="30bXR$" id="27BqVNXkDJq" role="3sM3bS" />
       </node>
       <node concept="3sM3a9" id="27BqVNXbRKF" role="3sM3bU">
         <property role="TrG5h" value="hello" />
-        <node concept="3sM3bY" id="27BqVNXbRKN" role="3sM3bS" />
+        <node concept="30bXR$" id="27BqVNXkDJv" role="3sM3bS" />
       </node>
       <node concept="3sM3a9" id="27BqVNXcs_v" role="3sM3bU">
         <property role="TrG5h" value="hauptsitz" />
@@ -65,7 +69,7 @@
       <property role="TrG5h" value="Addresse" />
       <node concept="3sM3a9" id="27BqVNXbYMT" role="3sM3bU">
         <property role="TrG5h" value="name" />
-        <node concept="3sM3bZ" id="27BqVNXbYMS" role="3sM3bS" />
+        <node concept="30bdrU" id="27BqVNXkDJ$" role="3sM3bS" />
       </node>
     </node>
   </node>
