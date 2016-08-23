@@ -34,6 +34,9 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -86,9 +89,11 @@
         <node concept="2iRfu4" id="2XvX04fa87n" role="2iSdaV" />
         <node concept="1kHk_G" id="2XvX04faDdz" role="3EZMnx">
           <ref role="1NtTu8" to="7mgl:2XvX04faDda" resolve="public" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0ifn" id="2XvX04fa87j" role="3EZMnx">
           <property role="3F0ifm" value="entity" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0A7n" id="2XvX04fa87z" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -117,6 +122,7 @@
         <node concept="2iRfu4" id="2XvX04fa8BX" role="2iSdaV" />
         <node concept="3F0ifn" id="2XvX04fa8BP" role="3EZMnx">
           <property role="3F0ifm" value="package" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0A7n" id="2XvX04fa8C5" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -143,6 +149,7 @@
         <node concept="3F0A7n" id="2XvX04far$I" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         </node>
       </node>
     </node>
@@ -152,6 +159,7 @@
     <node concept="3EZMnI" id="1QguJkGmiEc" role="2wV5jI">
       <node concept="3F0ifn" id="1QguJkGmiEj" role="3EZMnx">
         <property role="3F0ifm" value="new" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F1sOY" id="1QguJkGmqWx" role="3EZMnx">
         <ref role="1NtTu8" to="7mgl:1QguJkGmqWn" />
