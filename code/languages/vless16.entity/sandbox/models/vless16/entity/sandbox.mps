@@ -54,8 +54,8 @@
       </node>
       <node concept="jGh_N" id="5wSoitbyB4p" role="jGh_c">
         <property role="TrG5h" value="address" />
-        <node concept="jG$Ek" id="5wSoitbyB4B" role="jGh_e">
-          <ref role="jG$Ej" node="5wSoitbynIj" resolve="Person" />
+        <node concept="jG$Ek" id="76IaIO3PTa5" role="jGh_e">
+          <ref role="jG$Ej" node="5wSoitbyp7c" resolve="Address" />
         </node>
       </node>
       <node concept="jGh_N" id="5wSoitbyVKZ" role="jGh_c">
@@ -67,6 +67,10 @@
     </node>
     <node concept="jGh_M" id="5wSoitbyp7c" role="jGh_a">
       <property role="TrG5h" value="Address" />
+      <node concept="jGh_N" id="76IaIO3PTac" role="jGh_c">
+        <property role="TrG5h" value="street" />
+        <node concept="jGh_3" id="76IaIO3PTab" role="jGh_e" />
+      </node>
     </node>
   </node>
   <node concept="jGh_K" id="5wSoitbyO9K">
@@ -80,7 +84,9 @@
       </node>
       <node concept="jGh_N" id="5wSoitbyOa4" role="jGh_c">
         <property role="TrG5h" value="version" />
-        <node concept="jGh_4" id="5wSoitbyOaa" role="jGh_e" />
+        <node concept="jG$Ek" id="76IaIO3PTa8" role="jGh_e">
+          <ref role="jG$Ej" node="5wSoitbyO9U" resolve="Version" />
+        </node>
       </node>
       <node concept="jGh_N" id="5wSoitbyOaf" role="jGh_c">
         <property role="TrG5h" value="name" />
