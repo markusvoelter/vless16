@@ -14,6 +14,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -98,6 +99,41 @@
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2XvX04f9Qza" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1QguJkGmh8P">
+    <property role="1pbfSe" value="1240042794" />
+    <property role="TrG5h" value="NewExpression" />
+    <property role="34LRSv" value="new" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1QguJkGmqWn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2XvX04far$8" resolve="EntityType" />
+    </node>
+    <node concept="1TJgyj" id="1QguJkGmJBN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="params" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1QguJkGmJB7" resolve="NamedParameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1QguJkGmJB7">
+    <property role="1pbfSe" value="1240167612" />
+    <property role="TrG5h" value="NamedParameter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1QguJkGmJB8" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2XvX04f9Qzb" resolve="Attribute" />
+    </node>
+    <node concept="1TJgyj" id="1QguJkGmJBa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>
