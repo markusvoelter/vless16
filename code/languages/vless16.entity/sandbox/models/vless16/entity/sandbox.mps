@@ -5,9 +5,15 @@
     <use id="6241b6d7-0a1c-4a8e-aa6a-9c470b2f9d5d" name="vless16.entity" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
+      <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
+    </language>
     <language id="6241b6d7-0a1c-4a8e-aa6a-9c470b2f9d5d" name="vless16.entity">
       <concept id="3413715327956662536" name="vless16.entity.structure.EntityType" flags="ng" index="wt$O9">
         <reference id="3413715327956662537" name="entity" index="wt$O8" />
@@ -22,8 +28,6 @@
       <concept id="3413715327956510925" name="vless16.entity.structure.Package" flags="ng" index="wu9Nc">
         <child id="3413715327956510938" name="entities" index="wu9Nr" />
       </concept>
-      <concept id="3413715327956510933" name="vless16.entity.structure.StringType" flags="ng" index="wu9Nk" />
-      <concept id="3413715327956510932" name="vless16.entity.structure.IntType" flags="ng" index="wu9Nl" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -38,11 +42,11 @@
       <property role="wtmtb" value="true" />
       <node concept="wu9Na" id="2XvX04f9QK2" role="wu9Np">
         <property role="TrG5h" value="name" />
-        <node concept="wu9Nk" id="2XvX04f9QK6" role="wu9Nn" />
+        <node concept="30bdrU" id="3qvQOc_9E9" role="wu9Nn" />
       </node>
       <node concept="wu9Na" id="2XvX04f9QK9" role="wu9Np">
         <property role="TrG5h" value="alter" />
-        <node concept="wu9Nl" id="2XvX04f9QKf" role="wu9Nn" />
+        <node concept="30bXR$" id="3qvQOc_9Ei" role="wu9Nn" />
       </node>
       <node concept="wu9Na" id="2XvX04faxML" role="wu9Np">
         <property role="TrG5h" value="address" />
@@ -55,15 +59,15 @@
       <property role="TrG5h" value="Address" />
       <node concept="wu9Na" id="2XvX04faxMf" role="wu9Np">
         <property role="TrG5h" value="street" />
-        <node concept="wu9Nk" id="2XvX04faxMe" role="wu9Nn" />
+        <node concept="30bdrU" id="3qvQOc_9Er" role="wu9Nn" />
       </node>
       <node concept="wu9Na" id="2XvX04faxMu" role="wu9Np">
         <property role="TrG5h" value="number" />
-        <node concept="wu9Nl" id="2XvX04faxMA" role="wu9Nn" />
+        <node concept="30bXR$" id="3qvQOc_9E$" role="wu9Nn" />
       </node>
       <node concept="wu9Na" id="2XvX04faxMj" role="wu9Np">
         <property role="TrG5h" value="town" />
-        <node concept="wu9Nk" id="2XvX04faxMp" role="wu9Nn" />
+        <node concept="30bdrU" id="3qvQOc_9EM" role="wu9Nn" />
       </node>
     </node>
   </node>

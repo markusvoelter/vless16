@@ -4,17 +4,16 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -72,15 +71,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2XvX04f9Qzc" resolve="Type" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2XvX04f9Qzc">
-    <property role="1pbfSe" value="1049058509" />
-    <property role="TrG5h" value="Type" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2XvX04f9Qzd">
     <property role="1pbfSe" value="1049058510" />
@@ -97,22 +89,10 @@
       <ref role="20lvS9" node="2XvX04f9Qza" resolve="Entity" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2XvX04f9Qzk">
-    <property role="1pbfSe" value="1049058517" />
-    <property role="TrG5h" value="IntType" />
-    <property role="34LRSv" value="int" />
-    <ref role="1TJDcQ" node="2XvX04f9Qzc" resolve="Type" />
-  </node>
-  <node concept="1TIwiD" id="2XvX04f9Qzl">
-    <property role="1pbfSe" value="1049058518" />
-    <property role="TrG5h" value="StringType" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="2XvX04f9Qzc" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="2XvX04far$8">
     <property role="1pbfSe" value="1049210121" />
     <property role="TrG5h" value="EntityType" />
-    <ref role="1TJDcQ" node="2XvX04f9Qzc" resolve="Type" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="2XvX04far$9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="entity" />

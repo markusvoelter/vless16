@@ -8,6 +8,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="7mgl" ref="r:e2ef1d11-48b2-4290-9577-753e212433ca(vless16.entity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -22,10 +23,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
-      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -63,21 +60,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="2XvX04f9QKE">
-    <ref role="1XX52x" to="7mgl:2XvX04f9Qzk" resolve="IntType" />
-    <node concept="3F0ifn" id="2XvX04f9QKG" role="2wV5jI">
-      <property role="3F0ifm" value="int" />
-      <node concept="VechU" id="2XvX04fa7sC" role="3F10Kt">
-        <property role="Vb096" value="green" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2XvX04f9QL7">
-    <ref role="1XX52x" to="7mgl:2XvX04f9Qzl" resolve="StringType" />
-    <node concept="3F0ifn" id="2XvX04f9QL9" role="2wV5jI">
-      <property role="3F0ifm" value="string" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2XvX04fa7t2">
     <ref role="1XX52x" to="7mgl:2XvX04f9Qzb" resolve="Attribute" />
     <node concept="3EZMnI" id="2XvX04fa7Lp" role="2wV5jI">
