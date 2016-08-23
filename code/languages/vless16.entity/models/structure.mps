@@ -111,6 +111,29 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="27BqVNXcfzT" resolve="EntityType" />
     </node>
+    <node concept="1TJgyj" id="3uzWWASmA6A" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3uzWWASmrlH" resolve="AttributeValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3uzWWASmrlH">
+    <property role="1pbfSe" value="268588746" />
+    <property role="TrG5h" value="AttributeValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3uzWWASmrlK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3uzWWASmrlI" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="27BqVNXbP$P" resolve="Attribute" />
+    </node>
   </node>
 </model>
 
