@@ -377,5 +377,40 @@
       <ref role="1YaFvo" to="7mgl:1QguJkGmh8P" resolve="NewExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="q$HDVXOD_A">
+    <property role="TrG5h" value="typeof_AttributeDotTarget" />
+    <node concept="3clFbS" id="q$HDVXOD_B" role="18ibNy">
+      <node concept="1Z5TYs" id="q$HDVXODCO" role="3cqZAp">
+        <node concept="mw_s8" id="q$HDVXODD8" role="1ZfhKB">
+          <node concept="1Z2H0r" id="q$HDVXODD4" role="mwGJk">
+            <node concept="2OqwBi" id="q$HDVXODPj" role="1Z2MuG">
+              <node concept="2OqwBi" id="q$HDVXODFc" role="2Oq$k0">
+                <node concept="1YBJjd" id="q$HDVXODDp" role="2Oq$k0">
+                  <ref role="1YBMHb" node="q$HDVXOD_D" resolve="attributeDotTarget" />
+                </node>
+                <node concept="3TrEf2" id="q$HDVXODJj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="7mgl:q$HDVXNP_p" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="q$HDVXODXH" role="2OqNvi">
+                <ref role="3Tt5mk" to="7mgl:2XvX04f9Qzm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="q$HDVXODCR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="q$HDVXOD_H" role="mwGJk">
+            <node concept="1YBJjd" id="q$HDVXODA9" role="1Z2MuG">
+              <ref role="1YBMHb" node="q$HDVXOD_D" resolve="attributeDotTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="q$HDVXOD_D" role="1YuTPh">
+      <property role="TrG5h" value="attributeDotTarget" />
+      <ref role="1YaFvo" to="7mgl:q$HDVXNP$Y" resolve="AttributeDotTarget" />
+    </node>
+  </node>
 </model>
 

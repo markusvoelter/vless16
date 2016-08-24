@@ -15,6 +15,11 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
+      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
+        <child id="5115872837156576280" name="right" index="30dEs_" />
+        <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -207,9 +212,40 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="q$HDVXPbBh" role="_iOnB" />
+    <node concept="2zPypq" id="q$HDVXPbC$" role="_iOnB">
+      <property role="TrG5h" value="agesum" />
+      <node concept="30dDZf" id="q$HDVXPbIV" role="2zPyp_">
+        <node concept="1QScDb" id="q$HDVXPbKS" role="30dEs_">
+          <node concept="3VqYYw" id="q$HDVXPbLL" role="1QScD9">
+            <ref role="3VqYZ7" node="2XvX04f9QK9" resolve="age" />
+          </node>
+          <node concept="_emDc" id="q$HDVXPbJZ" role="30czhm">
+            <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="q$HDVXPbHE" role="30dEsF">
+          <node concept="3VqYYw" id="q$HDVXPbIk" role="1QScD9">
+            <ref role="3VqYZ7" node="2XvX04f9QK9" resolve="age" />
+          </node>
+          <node concept="_emDc" id="q$HDVXPbDX" role="30czhm">
+            <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="1QguJkGmicZ" role="_iOnB" />
     <node concept="_fkuM" id="1QguJkGmicV" role="_iOnB">
       <property role="TrG5h" value="new" />
+      <node concept="_fkuZ" id="q$HDVXP8uU" role="_fkp5">
+        <node concept="_fku$" id="q$HDVXP8uV" role="_fkur" />
+        <node concept="_emDc" id="q$HDVXP8vv" role="_fkuY">
+          <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+        </node>
+        <node concept="_emDc" id="q$HDVXP8vU" role="_fkuS">
+          <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+        </node>
+      </node>
       <node concept="_fkuZ" id="1QguJkGmJz_" role="_fkp5">
         <node concept="_fku$" id="1QguJkGmJzA" role="_fkur" />
         <node concept="1QScDb" id="q$HDVXOFcV" role="_fkuY">
@@ -227,6 +263,15 @@
         </node>
         <node concept="30bXRB" id="q$HDVXOCZx" role="_fkuS">
           <property role="30bXRw" value="12" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="q$HDVXPbMD" role="_fkp5">
+        <node concept="_fku$" id="q$HDVXPbME" role="_fkur" />
+        <node concept="_emDc" id="q$HDVXPbNc" role="_fkuY">
+          <ref role="_emDf" node="q$HDVXPbC$" resolve="agesum" />
+        </node>
+        <node concept="30bXRB" id="q$HDVXPbNk" role="_fkuS">
+          <property role="30bXRw" value="24" />
         </node>
       </node>
     </node>
