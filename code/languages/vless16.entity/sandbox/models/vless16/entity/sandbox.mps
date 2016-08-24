@@ -19,6 +19,12 @@
       <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
+      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
+        <child id="5115872837156802411" name="expr" index="30czhm" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
@@ -52,8 +58,13 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+      <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
+      <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
     <language id="4de8d4e8-7cd4-4219-8990-7f0ce80b3397" name="vless16.entity">
+      <concept id="1669890676612797209" name="vless16.entity.structure.AttributeTarget" flags="ng" index="64Fuw">
+        <reference id="1669890676612797375" name="attr" index="64Fs6" />
+      </concept>
       <concept id="4009316140996448616" name="vless16.entity.structure.NewExpression" flags="ng" index="2fXEax">
         <child id="4009316140996483366" name="entity" index="2fXyFJ" />
         <child id="4009316140996780454" name="values" index="2fYp9J" />
@@ -79,6 +90,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
+        <reference id="4790956042240522408" name="function" index="1afhQb" />
+      </concept>
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+        <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
     </language>
   </registry>
@@ -169,15 +188,27 @@
       </node>
     </node>
     <node concept="_ixoA" id="3uzWWASliQ4" role="_iOnB" />
+    <node concept="1aga60" id="1sGDb$hfx9_" role="_iOnB">
+      <property role="TrG5h" value="getMarkus" />
+      <node concept="_emDc" id="1sGDb$hfxai" role="1ahQXP">
+        <ref role="_emDf" node="3uzWWASliQ8" resolve="markus" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="1sGDb$hfx9c" role="_iOnB" />
     <node concept="_fkuM" id="3uzWWASliQ0" role="_iOnB">
       <property role="TrG5h" value="Test1" />
       <node concept="_fkuZ" id="3uzWWASmqfT" role="_fkp5">
         <node concept="_fku$" id="3uzWWASmqfU" role="_fkur" />
-        <node concept="_emDc" id="3uzWWASmqgm" role="_fkuY">
-          <ref role="_emDf" node="3uzWWASliQ8" resolve="markus" />
+        <node concept="1QScDb" id="1sGDb$hfxaX" role="_fkuY">
+          <node concept="64Fuw" id="1sGDb$hg_fU" role="1QScD9">
+            <ref role="64Fs6" node="27BqVNXbPLZ" resolve="alter" />
+          </node>
+          <node concept="1af_rf" id="1sGDb$hfxaQ" role="30czhm">
+            <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
+          </node>
         </node>
-        <node concept="_emDc" id="3uzWWASmqiY" role="_fkuS">
-          <ref role="_emDf" node="3uzWWASliQ8" resolve="markus" />
+        <node concept="30bXRB" id="1sGDb$hg_g4" role="_fkuS">
+          <property role="30bXRw" value="12" />
         </node>
       </node>
     </node>
