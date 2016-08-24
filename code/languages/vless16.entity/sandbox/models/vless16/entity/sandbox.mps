@@ -11,6 +11,14 @@
   </languages>
   <imports />
   <registry>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
+        <child id="5115872837156802411" name="expr" index="30czhm" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
+    </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
@@ -65,6 +73,9 @@
       <concept id="2130337817175980487" name="vless16.entity.structure.NamedParameter" flags="ng" index="LMCcM">
         <reference id="2130337817175980488" name="attribute" index="LMCcX" />
         <child id="2130337817175980490" name="value" index="LMCcZ" />
+      </concept>
+      <concept id="478708254387427646" name="vless16.entity.structure.AttributeDotTarget" flags="ng" index="3VqYYw">
+        <reference id="478708254387427673" name="attribute" index="3VqYZ7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -201,11 +212,21 @@
       <property role="TrG5h" value="new" />
       <node concept="_fkuZ" id="1QguJkGmJz_" role="_fkp5">
         <node concept="_fku$" id="1QguJkGmJzA" role="_fkur" />
-        <node concept="_emDc" id="1QguJkGmJzT" role="_fkuY">
-          <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+        <node concept="1QScDb" id="q$HDVXOFcV" role="_fkuY">
+          <node concept="3VqYYw" id="q$HDVXOFdx" role="1QScD9">
+            <ref role="3VqYZ7" node="2XvX04faxMu" resolve="number" />
+          </node>
+          <node concept="1QScDb" id="q$HDVXO_jr" role="30czhm">
+            <node concept="3VqYYw" id="q$HDVXOFcN" role="1QScD9">
+              <ref role="3VqYZ7" node="2XvX04faxML" resolve="address" />
+            </node>
+            <node concept="_emDc" id="1QguJkGmJzT" role="30czhm">
+              <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+            </node>
+          </node>
         </node>
-        <node concept="_emDc" id="1QguJkGmJ$c" role="_fkuS">
-          <ref role="_emDf" node="1QguJkGmid3" resolve="person" />
+        <node concept="30bXRB" id="q$HDVXOCZx" role="_fkuS">
+          <property role="30bXRw" value="12" />
         </node>
       </node>
     </node>
