@@ -283,5 +283,17 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1sGDb$hfxfp">
+    <ref role="1XX52x" to="e4kc:1sGDb$hfxcp" resolve="AttributeTarget" />
+    <node concept="1iCGBv" id="1sGDb$hfxfx" role="2wV5jI">
+      <ref role="1NtTu8" to="e4kc:1sGDb$hfxeZ" />
+      <node concept="1sVBvm" id="1sGDb$hfxfz" role="1sWHZn">
+        <node concept="3F0A7n" id="1sGDb$hfxfX" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

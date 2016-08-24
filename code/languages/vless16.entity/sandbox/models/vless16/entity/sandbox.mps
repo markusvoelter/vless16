@@ -12,6 +12,14 @@
   </languages>
   <imports />
   <registry>
+    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+        <child id="229512757698888936" name="optionalName" index="pfQ1b" />
+      </concept>
+      <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
+        <property id="229512757698888203" name="optionalName" index="pfQqC" />
+      </concept>
+    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
         <child id="2807135271608145921" name="expr" index="UmaED" />
@@ -24,6 +32,14 @@
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
+      <concept id="1059200196222838506" name="org.iets3.core.expr.base.structure.WithSomeExpression" flags="ng" index="1ZkuSt">
+        <child id="1059200196222838507" name="optionExpr" index="1ZkuSs" />
+        <child id="1059200196222838749" name="else" index="1ZkuWE" />
+        <child id="1059200196222838647" name="then" index="1ZkuY0" />
+      </concept>
+      <concept id="1059200196223309235" name="org.iets3.core.expr.base.structure.SomeValExpr" flags="ng" index="1ZmhP4">
+        <reference id="1059200196223309236" name="with" index="1ZmhP3" />
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
@@ -167,6 +183,12 @@
           <ref role="2fY$qB" node="27BqVNXcs_J" resolve="bruder" />
           <node concept="UmaEC" id="3uzWWASnopg" role="2fY$qT">
             <node concept="2fXEax" id="3uzWWASnooo" role="UmaED">
+              <node concept="2fY$q$" id="1sGDb$hgV7m" role="2fYp9J">
+                <ref role="2fY$qB" node="27BqVNXbPLZ" resolve="alter" />
+                <node concept="30bXRB" id="1sGDb$hgV8a" role="2fY$qT">
+                  <property role="30bXRw" value="42" />
+                </node>
+              </node>
               <node concept="3sPTd5" id="3uzWWASnooG" role="2fXyFJ">
                 <ref role="3sPTd6" node="27BqVNXbPLI" resolve="Person" />
               </node>
@@ -209,6 +231,36 @@
         </node>
         <node concept="30bXRB" id="1sGDb$hg_g4" role="_fkuS">
           <property role="30bXRw" value="12" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="1sGDb$hgV8p" role="_fkp5">
+        <node concept="_fku$" id="1sGDb$hgV8q" role="_fkur" />
+        <node concept="1ZkuSt" id="1sGDb$hgVbF" role="_fkuY">
+          <node concept="1QScDb" id="1sGDb$hgVdz" role="1ZkuSs">
+            <node concept="64Fuw" id="1sGDb$hgVe3" role="1QScD9">
+              <ref role="64Fs6" node="27BqVNXcs_J" resolve="bruder" />
+            </node>
+            <node concept="1af_rf" id="1sGDb$hgVcu" role="30czhm">
+              <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="1sGDb$hgVgR" role="1ZkuY0">
+            <node concept="64Fuw" id="1sGDb$hgVi2" role="1QScD9">
+              <ref role="64Fs6" node="27BqVNXbPLZ" resolve="alter" />
+            </node>
+            <node concept="1ZmhP4" id="1sGDb$hgVfH" role="30czhm">
+              <ref role="1ZmhP3" node="1sGDb$hgVbF" resolve="v" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="1sGDb$hgVjp" role="1ZkuWE">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="pfQqD" id="1sGDb$hgVeI" role="pfQ1b">
+            <property role="pfQqC" value="v" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="1sGDb$hgVjh" role="_fkuS">
+          <property role="30bXRw" value="42" />
         </node>
       </node>
     </node>

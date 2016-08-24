@@ -135,5 +135,19 @@
       <ref role="20lvS9" node="27BqVNXbP$P" resolve="Attribute" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1sGDb$hfxcp">
+    <property role="1pbfSe" value="678082514" />
+    <property role="TrG5h" value="AttributeTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1sGDb$hfxcq" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="1sGDb$hfxeZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="27BqVNXbP$P" resolve="Attribute" />
+    </node>
+  </node>
 </model>
 
