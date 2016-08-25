@@ -13,6 +13,7 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="e4kc" ref="r:deeda1c6-7a2e-433a-949b-655f9de79f3f(vless16.entity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="v218" ref="r:a04a7743-88f1-4b8b-bb49-b74565de5281(vless16.entity.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -38,8 +39,12 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
+        <child id="1221219051630" name="query" index="1mkY_M" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1221062700015" name="jetbrains.mps.lang.editor.structure.QueryFunction_Underlined" flags="in" index="1d0yFN" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -83,6 +88,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips">
       <concept id="9185659875393567715" name="de.itemis.mps.tooltips.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
@@ -91,6 +99,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -105,6 +116,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -120,6 +132,34 @@
       </node>
       <node concept="3F0A7n" id="27BqVNXbQH_" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VQ3r3" id="7GJrr0qTNom" role="3F10Kt">
+          <node concept="1d0yFN" id="7GJrr0qTNoo" role="1mkY_M">
+            <node concept="3clFbS" id="7GJrr0qTNop" role="2VODD2">
+              <node concept="3clFbF" id="7GJrr0qTNpu" role="3cqZAp">
+                <node concept="2OqwBi" id="7GJrr0qTNsX" role="3clFbG">
+                  <node concept="pncrf" id="7GJrr0qTNpt" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="7GJrr0qTN$M" role="2OqNvi">
+                    <ref role="37wK5l" to="v218:7GJrr0qSR$h" resolve="isDerived" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="7GJrr0qSF8D" role="3EZMnx">
+        <node concept="3EZMnI" id="7GJrr0qSF92" role="_tjki">
+          <node concept="3F0ifn" id="7GJrr0qSF9k" role="3EZMnx">
+            <property role="3F0ifm" value="=" />
+          </node>
+          <node concept="3F1sOY" id="7GJrr0qSF9$" role="3EZMnx">
+            <ref role="1NtTu8" to="e4kc:7GJrr0qRJ$f" />
+          </node>
+          <node concept="2iRfu4" id="7GJrr0qSF95" role="2iSdaV" />
+          <node concept="VPM3Z" id="7GJrr0qSF96" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="27BqVNXbQHl" role="2iSdaV" />
     </node>
@@ -293,6 +333,24 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7GJrr0qT5GK">
+    <ref role="1XX52x" to="e4kc:7GJrr0qT5Gl" resolve="SiblingAttrRef" />
+    <node concept="1iCGBv" id="7GJrr0qT5GU" role="2wV5jI">
+      <ref role="1NtTu8" to="e4kc:7GJrr0qT5Gm" />
+      <node concept="1sVBvm" id="7GJrr0qT5GW" role="1sWHZn">
+        <node concept="3F0A7n" id="7GJrr0qT5Hd" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7GJrr0qTv$0">
+    <ref role="1XX52x" to="e4kc:7GJrr0qTvzo" resolve="ThisEntityExpr" />
+    <node concept="PMmxH" id="7GJrr0qU0NA" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
