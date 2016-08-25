@@ -13,9 +13,6 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
-        <child id="2807135271608145921" name="expr" index="UmaED" />
-      </concept>
       <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
@@ -242,17 +239,21 @@
         </node>
         <node concept="2fY$q$" id="3uzWWASmSeY" role="2fYp9J">
           <ref role="2fY$qB" node="27BqVNXcs_J" resolve="bruder" />
-          <node concept="UmaEC" id="3uzWWASnopg" role="2fY$qT">
-            <node concept="2fXEax" id="3uzWWASnooo" role="UmaED">
-              <node concept="2fY$q$" id="1sGDb$hgV7m" role="2fYp9J">
-                <ref role="2fY$qB" node="27BqVNXbPLZ" resolve="alter" />
-                <node concept="30bXRB" id="1sGDb$hgV8a" role="2fY$qT">
-                  <property role="30bXRw" value="42" />
-                </node>
+          <node concept="2fXEax" id="3uzWWASnooo" role="2fY$qT">
+            <node concept="2fY$q$" id="7GJrr0qVl_d" role="2fYp9J">
+              <ref role="2fY$qB" node="27BqVNXkMsY" resolve="firstName" />
+              <node concept="30bdrP" id="7GJrr0qVl_X" role="2fY$qT">
+                <property role="30bdrQ" value="Mathias" />
               </node>
-              <node concept="3sPTd5" id="3uzWWASnooG" role="2fXyFJ">
-                <ref role="3sPTd6" node="27BqVNXbPLI" resolve="Person" />
+            </node>
+            <node concept="2fY$q$" id="1sGDb$hgV7m" role="2fYp9J">
+              <ref role="2fY$qB" node="27BqVNXbPLZ" resolve="alter" />
+              <node concept="30bXRB" id="1sGDb$hgV8a" role="2fY$qT">
+                <property role="30bXRw" value="42" />
               </node>
+            </node>
+            <node concept="3sPTd5" id="3uzWWASnooG" role="2fXyFJ">
+              <ref role="3sPTd6" node="27BqVNXbPLI" resolve="Person" />
             </node>
           </node>
         </node>
@@ -320,6 +321,25 @@
         </node>
         <node concept="30bdrP" id="7GJrr0qULVr" role="_fkuS">
           <property role="30bdrQ" value="Guten Tag Hello Markus" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7GJrr0qVlAS" role="_fkp5">
+        <node concept="_fku$" id="7GJrr0qVlAT" role="_fkur" />
+        <node concept="1QScDb" id="7GJrr0qVlCd" role="_fkuY">
+          <node concept="64Fuw" id="7GJrr0qVlCW" role="1QScD9">
+            <ref role="64Fs6" node="7GJrr0qRHky" resolve="greeting" />
+          </node>
+          <node concept="1QScDb" id="7GJrr0qVlBB" role="30czhm">
+            <node concept="64Fuw" id="7GJrr0qVlC5" role="1QScD9">
+              <ref role="64Fs6" node="27BqVNXcs_J" resolve="bruder" />
+            </node>
+            <node concept="1af_rf" id="7GJrr0qVlBx" role="30czhm">
+              <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bdrP" id="7GJrr0qVmqm" role="_fkuS">
+          <property role="30bdrQ" value="Hello Mathias" />
         </node>
       </node>
     </node>
