@@ -12,14 +12,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
-        <child id="229512757698888936" name="optionalName" index="pfQ1b" />
-      </concept>
-      <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
-        <property id="229512757698888203" name="optionalName" index="pfQqC" />
-      </concept>
-    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
         <child id="2807135271608145921" name="expr" index="UmaED" />
@@ -37,14 +29,6 @@
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
-      </concept>
-      <concept id="1059200196222838506" name="org.iets3.core.expr.base.structure.WithSomeExpression" flags="ng" index="1ZkuSt">
-        <child id="1059200196222838507" name="optionExpr" index="1ZkuSs" />
-        <child id="1059200196222838749" name="else" index="1ZkuWE" />
-        <child id="1059200196222838647" name="then" index="1ZkuY0" />
-      </concept>
-      <concept id="1059200196223309235" name="org.iets3.core.expr.base.structure.SomeValExpr" flags="ng" index="1ZmhP4">
-        <reference id="1059200196223309236" name="with" index="1ZmhP3" />
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
@@ -108,7 +92,6 @@
       <concept id="2443039782317652217" name="vless16.entity.structure.EntityType" flags="ng" index="3sPTd5">
         <reference id="2443039782317652218" name="entity" index="3sPTd6" />
       </concept>
-      <concept id="8876433993703487704" name="vless16.entity.structure.ThisEntityExpr" flags="ng" index="1xMDlC" />
       <concept id="8876433993703381781" name="vless16.entity.structure.SiblingAttrRef" flags="ng" index="1xMNq_">
         <reference id="8876433993703381782" name="attr" index="1xMNqA" />
       </concept>
@@ -167,22 +150,24 @@
       <node concept="3sM3a9" id="7GJrr0qRHky" role="3sM3bU">
         <property role="TrG5h" value="greeting" />
         <node concept="30bdrU" id="7GJrr0qRJ$a" role="3sM3bS" />
-        <node concept="1xMNq_" id="7GJrr0qU0GU" role="1xWpiZ">
-          <ref role="1xMNqA" node="27BqVNXbPLZ" resolve="alter" />
+        <node concept="30dDZf" id="7GJrr0qUILp" role="1xWpiZ">
+          <node concept="1xMNq_" id="7GJrr0qUIMy" role="30dEs_">
+            <ref role="1xMNqA" node="27BqVNXkMsY" resolve="firstName" />
+          </node>
+          <node concept="30bdrP" id="7GJrr0qUIK_" role="30dEsF">
+            <property role="30bdrQ" value="Hello " />
+          </node>
         </node>
       </node>
       <node concept="3sM3a9" id="7GJrr0qTNjO" role="3sM3bU">
         <property role="TrG5h" value="greeting2" />
         <node concept="30bdrU" id="7GJrr0qTNjP" role="3sM3bS" />
-        <node concept="30dDZf" id="7GJrr0qTNjQ" role="1xWpiZ">
-          <node concept="1QScDb" id="7GJrr0qU0M2" role="30dEs_">
-            <node concept="64Fuw" id="7GJrr0qU0MP" role="1QScD9">
-              <ref role="64Fs6" node="7GJrr0qTNjO" resolve="greeting2" />
-            </node>
-            <node concept="1xMDlC" id="7GJrr0qTNkN" role="30czhm" />
+        <node concept="30dDZf" id="7GJrr0qULUg" role="1xWpiZ">
+          <node concept="1xMNq_" id="7GJrr0qULV7" role="30dEs_">
+            <ref role="1xMNqA" node="7GJrr0qRHky" resolve="greeting" />
           </node>
-          <node concept="30bdrP" id="7GJrr0qTNjS" role="30dEsF">
-            <property role="30bdrQ" value="Hello" />
+          <node concept="30bdrP" id="7GJrr0qULTE" role="30dEsF">
+            <property role="30bdrQ" value="Guten Tag " />
           </node>
         </node>
       </node>
@@ -225,14 +210,14 @@
       <property role="TrG5h" value="addiere" />
       <node concept="30dDZf" id="7GJrr0qU0lv" role="1ahQXP">
         <node concept="1afdae" id="7GJrr0qT5Fv" role="30dEsF">
-          <ref role="1afue_" node="7GJrr0qT5EK" resolve="x" />
+          <ref role="1afue_" node="7GJrr0qT5EK" resolve="alter" />
         </node>
         <node concept="1afdae" id="7GJrr0qT5FZ" role="30dEs_">
           <ref role="1afue_" node="7GJrr0qT5F3" resolve="y" />
         </node>
       </node>
       <node concept="1ahQXy" id="7GJrr0qT5EK" role="1ahQWs">
-        <property role="TrG5h" value="x" />
+        <property role="TrG5h" value="alter" />
         <node concept="30bXR$" id="7GJrr0qT5EW" role="3ix9CU" />
       </node>
       <node concept="1ahQXy" id="7GJrr0qT5F3" role="1ahQWs">
@@ -309,34 +294,32 @@
           <property role="30bXRw" value="12" />
         </node>
       </node>
-      <node concept="_fkuZ" id="1sGDb$hgV8p" role="_fkp5">
-        <node concept="_fku$" id="1sGDb$hgV8q" role="_fkur" />
-        <node concept="1ZkuSt" id="1sGDb$hgVbF" role="_fkuY">
-          <node concept="1QScDb" id="1sGDb$hgVdz" role="1ZkuSs">
-            <node concept="64Fuw" id="1sGDb$hgVe3" role="1QScD9">
-              <ref role="64Fs6" node="27BqVNXcs_J" resolve="bruder" />
-            </node>
-            <node concept="1af_rf" id="1sGDb$hgVcu" role="30czhm">
-              <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
-            </node>
+      <node concept="_fkuZ" id="7GJrr0qUIJp" role="_fkp5">
+        <node concept="_fku$" id="7GJrr0qUIJq" role="_fkur" />
+        <node concept="1QScDb" id="7GJrr0qUIJX" role="_fkuY">
+          <node concept="64Fuw" id="7GJrr0qUIKn" role="1QScD9">
+            <ref role="64Fs6" node="7GJrr0qRHky" resolve="greeting" />
           </node>
-          <node concept="1QScDb" id="1sGDb$hgVgR" role="1ZkuY0">
-            <node concept="64Fuw" id="1sGDb$hgVi2" role="1QScD9">
-              <ref role="64Fs6" node="27BqVNXbPLZ" resolve="alter" />
-            </node>
-            <node concept="1ZmhP4" id="1sGDb$hgVfH" role="30czhm">
-              <ref role="1ZmhP3" node="1sGDb$hgVbF" resolve="v" />
-            </node>
-          </node>
-          <node concept="30bXRB" id="1sGDb$hgVjp" role="1ZkuWE">
-            <property role="30bXRw" value="0" />
-          </node>
-          <node concept="pfQqD" id="1sGDb$hgVeI" role="pfQ1b">
-            <property role="pfQqC" value="v" />
+          <node concept="1af_rf" id="7GJrr0qUIJR" role="30czhm">
+            <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
           </node>
         </node>
-        <node concept="30bXRB" id="1sGDb$hgVjh" role="_fkuS">
-          <property role="30bXRw" value="42" />
+        <node concept="30bdrP" id="7GJrr0qUIMU" role="_fkuS">
+          <property role="30bdrQ" value="Hello Markus" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7GJrr0qULVm" role="_fkp5">
+        <node concept="_fku$" id="7GJrr0qULVn" role="_fkur" />
+        <node concept="1QScDb" id="7GJrr0qULVo" role="_fkuY">
+          <node concept="64Fuw" id="7GJrr0qULVR" role="1QScD9">
+            <ref role="64Fs6" node="7GJrr0qTNjO" resolve="greeting2" />
+          </node>
+          <node concept="1af_rf" id="7GJrr0qULVq" role="30czhm">
+            <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="7GJrr0qULVr" role="_fkuS">
+          <property role="30bdrQ" value="Hello Markus" />
         </node>
       </node>
     </node>
