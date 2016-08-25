@@ -319,7 +319,7 @@
           </node>
         </node>
         <node concept="30bdrP" id="7GJrr0qULVr" role="_fkuS">
-          <property role="30bdrQ" value="Hello Markus" />
+          <property role="30bdrQ" value="Guten Tag Hello Markus" />
         </node>
       </node>
     </node>
