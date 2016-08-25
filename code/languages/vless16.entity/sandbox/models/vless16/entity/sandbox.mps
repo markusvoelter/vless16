@@ -89,6 +89,7 @@
       <concept id="2443039782317652217" name="vless16.entity.structure.EntityType" flags="ng" index="3sPTd5">
         <reference id="2443039782317652218" name="entity" index="3sPTd6" />
       </concept>
+      <concept id="8876433993703487704" name="vless16.entity.structure.ThisEntityExpr" flags="ng" index="1xMDlC" />
       <concept id="8876433993703381781" name="vless16.entity.structure.SiblingAttrRef" flags="ng" index="1xMNq_">
         <reference id="8876433993703381782" name="attr" index="1xMNqA" />
       </concept>
@@ -173,15 +174,18 @@
         <node concept="30bdrU" id="7GJrr0qTZXu" role="3sM3bS" />
         <node concept="30dDZf" id="7GJrr0qTZXv" role="1xWpiZ">
           <node concept="1QScDb" id="7GJrr0qTZXw" role="30dEs_">
-            <node concept="64Fuw" id="7GJrr0qU00O" role="1QScD9">
-              <ref role="64Fs6" node="27BqVNXbPLZ" resolve="alter" />
+            <node concept="64Fuw" id="7GJrr0qV$3x" role="1QScD9">
+              <ref role="64Fs6" node="27BqVNXkMsY" resolve="firstName" />
             </node>
-            <node concept="1xMNq_" id="7GJrr0qTZZ2" role="30czhm">
-              <ref role="1xMNqA" node="27BqVNXcs_J" resolve="bruder" />
+            <node concept="1QScDb" id="7GJrr0qVrjD" role="30czhm">
+              <node concept="64Fuw" id="7GJrr0qVrkn" role="1QScD9">
+                <ref role="64Fs6" node="27BqVNXcs_J" resolve="bruder" />
+              </node>
+              <node concept="1xMDlC" id="7GJrr0qVrjd" role="30czhm" />
             </node>
           </node>
           <node concept="30bdrP" id="7GJrr0qTZXz" role="30dEsF">
-            <property role="30bdrQ" value="Hello" />
+            <property role="30bdrQ" value="Hello " />
           </node>
         </node>
       </node>
@@ -240,6 +244,12 @@
         <node concept="2fY$q$" id="3uzWWASmSeY" role="2fYp9J">
           <ref role="2fY$qB" node="27BqVNXcs_J" resolve="bruder" />
           <node concept="2fXEax" id="3uzWWASnooo" role="2fY$qT">
+            <node concept="2fY$q$" id="7GJrr0qV_zO" role="2fYp9J">
+              <ref role="2fY$qB" node="27BqVNXbPLK" resolve="lastName" />
+              <node concept="30bdrP" id="7GJrr0qV_$i" role="2fY$qT">
+                <property role="30bdrQ" value="Voelter" />
+              </node>
+            </node>
             <node concept="2fY$q$" id="7GJrr0qVl_d" role="2fYp9J">
               <ref role="2fY$qB" node="27BqVNXkMsY" resolve="firstName" />
               <node concept="30bdrP" id="7GJrr0qVl_X" role="2fY$qT">
@@ -325,17 +335,12 @@
       </node>
       <node concept="_fkuZ" id="7GJrr0qVlAS" role="_fkp5">
         <node concept="_fku$" id="7GJrr0qVlAT" role="_fkur" />
-        <node concept="1QScDb" id="7GJrr0qVlCd" role="_fkuY">
-          <node concept="64Fuw" id="7GJrr0qVlCW" role="1QScD9">
-            <ref role="64Fs6" node="7GJrr0qRHky" resolve="greeting" />
+        <node concept="1QScDb" id="7GJrr0qVlBB" role="_fkuY">
+          <node concept="64Fuw" id="7GJrr0qVxxs" role="1QScD9">
+            <ref role="64Fs6" node="7GJrr0qTZXt" resolve="greeting3" />
           </node>
-          <node concept="1QScDb" id="7GJrr0qVlBB" role="30czhm">
-            <node concept="64Fuw" id="7GJrr0qVlC5" role="1QScD9">
-              <ref role="64Fs6" node="27BqVNXcs_J" resolve="bruder" />
-            </node>
-            <node concept="1af_rf" id="7GJrr0qVlBx" role="30czhm">
-              <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
-            </node>
+          <node concept="1af_rf" id="7GJrr0qVlBx" role="30czhm">
+            <ref role="1afhQb" node="1sGDb$hfx9_" resolve="getMarkus" />
           </node>
         </node>
         <node concept="30bdrP" id="7GJrr0qVmqm" role="_fkuS">

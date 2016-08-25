@@ -132,6 +132,9 @@
         <property id="8845772667389641968" name="cache" index="2TnfIJ" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>
+      <concept id="5934114435582125873" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorInline" flags="ng" index="3vetai">
+        <child id="5934114435582660673" name="expression" index="3vdyny" />
+      </concept>
       <concept id="8511326569641889031" name="com.mbeddr.mpsutil.interpreter.structure.AbstractRecursionExpression" flags="ng" index="3SLKdG">
         <child id="8511326569641873009" name="node" index="3SLO0q" />
       </concept>
@@ -457,6 +460,24 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="7GJrr0qVqoN" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="e4kc:7GJrr0qTvzo" resolve="ThisEntityExpr" />
+      <node concept="3vetai" id="7GJrr0qVqwt" role="3vQZUl">
+        <node concept="10QFUN" id="7GJrr0qVqwF" role="3vdyny">
+          <node concept="3uibUv" id="7GJrr0qVqwG" role="10QFUM">
+            <ref role="3uigEE" node="1sGDb$hgDGj" resolve="EntityValue" />
+          </node>
+          <node concept="3EllGN" id="7GJrr0qVqwH" role="10QFUP">
+            <node concept="TvHiN" id="7GJrr0qVqwI" role="3ElQJh" />
+            <node concept="10M0yZ" id="7GJrr0qVqwJ" role="3ElVtu">
+              <ref role="3cqZAo" node="7GJrr0qUH_M" resolve="LASTEVALENTITY" />
+              <ref role="1PxDUh" node="1sGDb$hgDGj" resolve="EntityValue" />
             </node>
           </node>
         </node>
